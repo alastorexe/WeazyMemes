@@ -6,14 +6,16 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "29.0.3"
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
 
     defaultConfig {
         applicationId "ru.alastor.weazymemes"
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
